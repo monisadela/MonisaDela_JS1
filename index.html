@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas JavaScript</title>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+        const age = 15;
+        let result = '';
+
+        result += "<h1>if else statement</h1>";
+
+        if (age >= 18) {
+           result += "Mauliza is an adult.";
+        } else {
+           result += "Mauliza is a child.";
+        }
+
+        result += "<h1>nested if</h1>"
+        const color = "blue";
+        if (color === "blue") {
+           result += "<br>it's not my favorite color";
+        } else if (color === "red") {
+           result += "<br>it is my favorite color";
+        } else {
+           result += "<br>it's not a color";
+        }
+
+        result += "<h1>switch case</h1>"
+        let boyfriend = '';
+        switch (boyfriend) {
+            case 'akbar':
+            case 'byaz':
+            case 'aldo':
+            case 'nanda':
+               result += `<br>${boyfriend} this is my boyfriend now.`;
+                break;
+            default:
+               result += `<br>${boyfriend} i don't have boyfriend now.`;
+                break;
+        }
+
+        result += "<h1>For statement</h1>"
+        const n = 5;
+        for (let i = 1; i <= n; i++) {
+           result += "<br>I love rizka dan liza";
+        }
+
+        result += "<h1>While loop</h1>"
+        let k = 2;
+        while (k <= 50) {
+           result += `<br>${k}`;
+            k++;
+        }
+
+        result += "<h1>Do While</h1>"
+        i = 2;
+        do {
+           result += `<br>${i}`;
+            i++;
+        } while (i <= 30);
+
+        result += "<h1>function</h1>"
+        function selamat() {
+            const nilai = 1000000;
+            const nama = 'aldo';
+
+            if (nilai < 10) {
+               result += "<br>harus cek mata";
+            } else {
+               result += `<br>${nama} terlalu gantenggg`;
+            }
+        }
+
+        selamat();
+
+        // Menampilkan hasil ke dalam elemen p dengan id "result"
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+</html>
